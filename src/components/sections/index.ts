@@ -1,0 +1,10 @@
+export { About } from "./about";
+export { Career } from "./career";
+export { Contact } from "./contact";
+export { FAQ } from "./faq";
+export { Footer } from "./footer";
+export { Hero } from "./hero";
+export { Projects } from "./projects";
+export { Skillset } from "./skillset";
+export { Standout } from "./standout";
+export { Testimonials } from "./testimonials";

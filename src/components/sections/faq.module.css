@@ -1,0 +1,247 @@
+.faq {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  background: var(--portfolio-color-canvas);
+}
+
+.inner {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 80px 128px;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.sectionHeader {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.eyebrow {
+  display: flex;
+  height: 32px;
+  margin: 0;
+  padding: 2px 16px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--portfolio-color-neutral-300);
+  border-radius: 24px;
+  color: var(--portfolio-color-neutral-700);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  color: var(--portfolio-color-text);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  padding: 19px 32px;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  border: 1px solid var(--portfolio-color-neutral-300);
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.item[data-expanded="true"] {
+  border-color: var(--portfolio-color-gradient-start);
+}
+
+.trigger {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.trigger:focus-visible {
+  outline: 3px solid rgb(151 71 255 / 35%);
+  outline-offset: 5px;
+}
+
+.question {
+  min-width: 0;
+  flex: 1;
+  color: var(--portfolio-color-text);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.item[data-expanded="true"] .question {
+  color: #6600eb;
+}
+
+.icon {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  place-items: center;
+  border: 1px solid var(--portfolio-color-neutral-300);
+  border-radius: 9999px;
+  background: var(--portfolio-color-canvas);
+}
+
+.desktopIcon,
+.mobileIcon {
+  display: block;
+}
+
+.mobileIcon,
+.accentMobile,
+.mobileQuestion {
+  display: none;
+}
+
+.panel p {
+  margin: 0;
+  color: var(--portfolio-color-text);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.accentDesktop,
+.accentMobile {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  height: 10px;
+  max-width: none;
+  transform: translate(-50%, -50%) rotate(90deg);
+  pointer-events: none;
+}
+
+.item[data-expanded="true"] .accentDesktop {
+  width: 200px;
+}
+
+.item[data-expanded="false"] .accentDesktop {
+  width: 91px;
+}
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  .inner {
+    padding-inline: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .inner {
+    padding: 40px 16px;
+    gap: 24px;
+  }
+
+  .sectionHeader {
+    gap: 12px;
+  }
+
+  .eyebrow {
+    height: 24px;
+    padding: 2px 12px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .sectionHeader h2 {
+    max-width: 361px;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.64px;
+  }
+
+  .list {
+    width: calc(100% + 2px);
+    gap: 16px;
+  }
+
+  .item {
+    padding: 19px 16px;
+    gap: 16px;
+  }
+
+  .item[data-expanded="true"] {
+    border-color: var(--portfolio-color-neutral-300);
+  }
+
+  .question {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .icon {
+    width: 28px;
+    height: 28px;
+    flex-basis: 28px;
+  }
+
+  .desktopIcon,
+  .accentDesktop,
+  .desktopQuestion {
+    display: none;
+  }
+
+  .mobileIcon,
+  .accentMobile,
+  .mobileQuestion {
+    display: block;
+  }
+
+  .panel p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .item[data-expanded="true"] .accentMobile {
+    width: 298px;
+  }
+
+  .item[data-expanded="false"] .accentMobile {
+    width: 122px;
+  }
+}

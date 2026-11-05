@@ -1,0 +1,280 @@
+.career {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  background: var(--portfolio-color-canvas);
+}
+
+.inner {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 80px 128px;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.sectionHeader {
+  display: flex;
+  width: 504px;
+  max-width: 100%;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.eyebrow {
+  display: flex;
+  height: 32px;
+  margin: 0;
+  padding: 2px 16px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--portfolio-color-neutral-300);
+  border-radius: 24px;
+  background: var(--portfolio-color-canvas);
+  color: var(--portfolio-color-neutral-700);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.mobileEyebrow {
+  display: none;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  color: var(--portfolio-color-text);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+}
+
+.list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+}
+
+.item {
+  min-width: 0;
+}
+
+.card {
+  position: relative;
+  min-height: 122px;
+  padding: 23px;
+  overflow: hidden;
+  border: 1px solid var(--portfolio-color-neutral-300);
+  border-radius: 16px;
+  background: var(--portfolio-color-on-dark);
+}
+
+.dateDecoration {
+  position: absolute;
+  top: -42px;
+  left: -76px;
+  display: block;
+  width: 215px;
+  height: 215px;
+  pointer-events: none;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.date {
+  width: 95px;
+  flex: 0 0 95px;
+  margin: 0;
+  color: var(--portfolio-color-on-dark);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.body {
+  display: grid;
+  min-width: 0;
+  flex: 1;
+  grid-template-columns: 260px minmax(0, 1fr);
+  align-items: center;
+  gap: 48px;
+}
+
+.companyDetails {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.companyDetails h3 {
+  margin: 0;
+  color: var(--portfolio-color-text);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 34px;
+  white-space: nowrap;
+}
+
+.company {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  gap: 8px;
+  color: var(--portfolio-color-neutral-700);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.iconSlot {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  place-items: center;
+}
+
+.iconSlot img {
+  display: block;
+}
+
+.description {
+  margin: 0;
+  color: var(--portfolio-color-neutral-800);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  .inner {
+    padding-inline: 40px;
+  }
+
+  .body {
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  .inner {
+    padding: 40px 16px;
+    gap: 24px;
+  }
+
+  .sectionHeader {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .eyebrow {
+    height: 24px;
+    padding: 2px 12px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .desktopEyebrow {
+    display: none;
+  }
+
+  .mobileEyebrow {
+    display: inline;
+  }
+
+  .sectionHeader h2 {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.64px;
+  }
+
+  .card {
+    min-height: 0;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .dateDecoration {
+    display: none;
+  }
+
+  .cardContent {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .cardContent::before {
+    position: absolute;
+    z-index: -1;
+    top: -18px;
+    left: -15px;
+    width: 109px;
+    height: 55px;
+    border-radius: 0 999px 999px 0;
+    background: linear-gradient(
+      118.4676deg,
+      var(--portfolio-color-gradient-start) 29.659%,
+      var(--portfolio-color-gradient-end) 172.07%
+    );
+    content: "";
+  }
+
+  .date {
+    width: auto;
+    flex: none;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .companyDetails {
+    gap: 12px;
+  }
+
+  .companyDetails h3 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .company {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,61 @@
+.testimonials { position: relative; z-index: 2; overflow: hidden; background: var(--portfolio-color-canvas); }
+.inner { display: flex; width: 100%; max-width: 1440px; margin-inline: auto; padding: 80px 128px; flex-direction: column; align-items: center; gap: 48px; }
+.sectionHeader { display: flex; width: 100%; flex-direction: column; align-items: center; gap: 16px; }
+.eyebrow { display: flex; height: 32px; margin: 0; padding: 2px 16px; align-items: center; justify-content: center; border: 1px solid var(--portfolio-color-neutral-300); border-radius: 24px; color: var(--portfolio-color-neutral-700); font-family: var(--font-poppins), sans-serif; font-size: 14px; font-weight: 400; line-height: 28px; }
+.sectionHeader h2 { margin: 0; color: var(--portfolio-color-text); font-family: var(--font-poppins), sans-serif; font-size: 48px; font-weight: 700; line-height: 60px; letter-spacing: -0.96px; text-align: center; }
+.desktopCarousel { display: flex; width: 100%; flex-direction: column; align-items: center; gap: 48px; }
+.viewport { width: calc(100% + 128px); align-self: flex-start; overflow: hidden; }
+.track { display: grid; width: 1603px; margin: 0; padding: 0; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; list-style: none; transition: transform 300ms ease; }
+.track[data-page="1"] { transform: translateX(-419px); }
+.track li { display: flex; min-width: 0; }
+.card { position: relative; display: flex; width: 100%; height: 500px; padding: 23px; flex-direction: column; align-items: flex-start; gap: 48px; overflow: hidden; border: 1px solid var(--portfolio-color-neutral-300); border-radius: 16px; background: var(--portfolio-color-on-dark); }
+.featuredCard { padding: 24px; border: 0; background: linear-gradient(104.8223deg, var(--portfolio-color-gradient-start) 38.399%, var(--portfolio-color-gradient-end) 141.95%); color: var(--portfolio-color-on-dark); }
+.desktopLogo { width: 133px; height: 48px; flex: 0 0 48px; }
+.desktopLogoImage, .desktopQuote, .mobileLogoImage, .mobileQuote, .desktopArrow, .mobileArrow, .cursor { display: block; }
+.desktopQuote { width: 48px; height: 48px; flex: 0 0 48px; }
+.quoteText { width: 100%; min-height: 0; flex: 1; margin: 0; color: var(--portfolio-color-text); font-family: var(--font-poppins), sans-serif; font-size: 28px; font-style: normal; font-weight: 500; line-height: 38px; }
+.featuredCard .quoteText { color: var(--portfolio-color-on-dark); }
+.client { display: flex; width: 100%; align-items: flex-start; gap: 12px; }
+.avatar { width: 60px; height: 60px; flex: 0 0 60px; border-radius: 9999px; object-fit: cover; }
+.clientDetails { display: flex; min-width: 0; flex: 1; flex-direction: column; gap: 2px; font-family: var(--font-poppins), sans-serif; font-size: 16px; line-height: 30px; }
+.clientDetails cite { color: var(--portfolio-color-text); font-style: normal; font-weight: 600; }
+.clientDetails p { margin: 0; color: var(--portfolio-color-neutral-500); font-weight: 400; white-space: nowrap; }
+.featuredCard .clientDetails cite, .featuredCard .clientDetails p { color: var(--portfolio-color-on-dark); }
+.cursor { position: absolute; top: 168px; left: 259px; width: 24px; height: 24px; }
+.navigation { display: flex; align-items: center; gap: 16px; }
+.navigationButton { display: grid; width: 64px; height: 64px; padding: 8px; place-items: center; border: 1px solid var(--portfolio-color-gradient-start); border-radius: 9999px; background: transparent; cursor: pointer; }
+.navigationButton:disabled { border-color: var(--portfolio-color-neutral-300); cursor: default; }
+.navigationButton:focus-visible { outline: 3px solid rgb(151 71 255 / 35%); outline-offset: 3px; }
+.mobileArrow, .mobileCarousel { display: none; }
+.status { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+@media (max-width: 1200px) and (min-width: 901px) { .inner { padding-inline: 40px; } }
+
+@media (max-width: 900px) {
+  .inner { padding: 40px 16px; gap: 24px; }
+  .sectionHeader { gap: 12px; }
+  .eyebrow { height: 24px; padding: 2px 12px; font-size: 12px; line-height: 16px; }
+  .sectionHeader h2 { font-size: 32px; line-height: 42px; letter-spacing: -0.64px; }
+  .desktopCarousel { display: none; }
+  .viewport { width: 100%; }
+  .mobileCarousel { display: flex; width: 100%; flex-direction: column; align-items: center; gap: 24px; }
+  .mobileCard { height: 346px; padding: 15px; gap: 32px; }
+  .mobileLogo { position: relative; width: 66px; height: 24px; flex: 0 0 24px; overflow: hidden; }
+  .scaledMobileLogo { display: block; width: 133px; max-width: none; height: 48px; transform: scale(0.5); transform-origin: top left; }
+  .mobileQuote { width: 32px; height: 32px; flex: 0 0 32px; }
+  .mobileQuoteFrame { display: block; width: 32px; height: 32px; flex: 0 0 32px; overflow: hidden; }
+  .scaledMobileQuote { display: block; width: 48px; max-width: none; height: 48px; transform: scale(0.6666667); transform-origin: top left; }
+  .mobileCard .quoteText { color: var(--portfolio-color-text); font-size: 20px; line-height: 34px; }
+  .mobileCard .clientDetails { gap: 0; font-size: 14px; line-height: 28px; }
+  .mobileCard .clientDetails cite { color: var(--portfolio-color-text); }
+  .mobileCard .clientDetails p { color: var(--portfolio-color-neutral-500); }
+  .mobileCard.featuredCard .quoteText, .mobileCard.featuredCard .clientDetails cite, .mobileCard.featuredCard .clientDetails p { color: var(--portfolio-color-on-dark); }
+  .navigation { gap: 12px; }
+  .navigationButton { width: 48px; height: 48px; padding: 6px; }
+  .desktopArrow { display: none; }
+  .mobileArrow { display: block; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track { transition: none; }
+}

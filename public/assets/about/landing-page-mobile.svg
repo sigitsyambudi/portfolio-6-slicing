@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="28.8" height="28.8" viewBox="0 0 28.8 28.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Next Button" clip-path="url(#clip0_0_53)">
+<path id="Icon" d="M9.6 25.2H19.2M14.4 20.4V25.2M8.16 20.4H20.64C22.6562 20.4 23.6643 20.4 24.4344 20.0076C25.1117 19.6625 25.6625 19.1118 26.0076 18.4344C26.4 17.6643 26.4 16.6562 26.4 14.64V9.36C26.4 7.34381 26.4 6.33572 26.0076 5.56563C25.6625 4.88825 25.1117 4.33752 24.4344 3.99238C23.6643 3.6 22.6562 3.6 20.64 3.6H8.16C6.14381 3.6 5.13572 3.6 4.36563 3.99238C3.68825 4.33752 3.13752 4.88825 2.79238 5.56563C2.4 6.33572 2.4 7.34381 2.4 9.36V14.64C2.4 16.6562 2.4 17.6643 2.79238 18.4344C3.13752 19.1118 3.68825 19.6625 4.36563 20.0076C5.13572 20.4 6.14381 20.4 8.16 20.4Z" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round" stroke="#FDFDFD"/>
+</g>
+<defs>
+<clipPath id="clip0_0_53">
+<rect width="28.8" height="28.8" fill="white"/>
+</clipPath>
+</defs>
+</svg>

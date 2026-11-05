@@ -1,0 +1,264 @@
+.hero {
+  position: relative;
+  z-index: 1;
+  height: 1024px;
+  background: var(--portfolio-color-hero);
+  color: var(--portfolio-color-on-dark);
+}
+
+.heroClip {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.desktopBackground,
+.mobileBackground,
+.desktopTransition,
+.mobileTransition {
+  position: absolute;
+  max-width: none;
+  pointer-events: none;
+}
+
+.desktopBackground {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mobileBackground,
+.mobileTransition {
+  display: none;
+}
+
+.copy {
+  position: absolute;
+  z-index: 3;
+  top: 146px;
+  left: 50%;
+  display: flex;
+  width: 1184px;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(-50%);
+}
+
+.copy h1 {
+  margin: 0;
+  color: var(--portfolio-color-on-dark);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 72px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.copy p {
+  width: 436px;
+  margin: 0;
+  color: var(--portfolio-color-on-dark-muted);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: right;
+}
+
+.portrait {
+  position: absolute;
+  z-index: 2;
+  top: 343px;
+  left: 50%;
+  width: 754px;
+  height: 754px;
+  transform: translateX(-50%);
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.actions {
+  position: absolute;
+  z-index: 4;
+  top: 816px;
+  left: 50%;
+  display: flex;
+  width: 1184px;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(-50%);
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.socialIcon {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  place-items: center;
+  border-radius: 125px;
+  background: rgb(10 13 18 / 50%);
+  backdrop-filter: blur(20px);
+}
+
+.mobileSocialAsset {
+  display: none;
+}
+
+.scrollButton {
+  display: flex;
+  padding: 4px 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 9999px;
+  background: rgb(10 13 18 / 50%);
+  color: var(--portfolio-color-on-dark);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-decoration: none;
+  backdrop-filter: blur(20px);
+}
+
+.scrollButton img {
+  transform: rotate(-90deg);
+}
+
+.desktopTransition {
+  z-index: 5;
+  top: 934px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1250px) and (min-width: 901px) {
+  .copy,
+  .actions {
+    width: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: 764px;
+    overflow-x: clip;
+  }
+
+  .desktopBackground,
+  .desktopTransition {
+    display: none;
+  }
+
+  .mobileBackground {
+    top: 307px;
+    left: calc(50% - 28px);
+    display: block;
+    transform: translateX(-50%);
+  }
+
+  .copy {
+    top: 137px;
+    left: 16px;
+    width: calc(100% - 32px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    transform: none;
+  }
+
+  .copy h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .copy p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .portrait {
+    top: 379px;
+    width: min(100vw, 393px);
+    height: min(100vw, 393px);
+  }
+
+  .actions {
+    top: 680px;
+    left: 16px;
+    width: calc(100% - 32px);
+    transform: none;
+  }
+
+  .socialIcons {
+    gap: 12px;
+  }
+
+  .socialIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    backdrop-filter: blur(16px);
+  }
+
+  .desktopSocialAsset {
+    display: none;
+  }
+
+  .mobileSocialAsset {
+    display: block;
+  }
+
+  .scrollButton {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .scrollButton span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .mobileTransition {
+    z-index: 5;
+    top: 747px;
+    left: 50%;
+    display: block;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 370px) {
+  .copy {
+    top: 120px;
+  }
+
+  .copy h1 {
+    font-size: 29px;
+    line-height: 38px;
+  }
+
+  .portrait {
+    top: 375px;
+  }
+
+  .actions {
+    top: 670px;
+  }
+}

@@ -1,0 +1,504 @@
+.contact {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 40px 128px 80px;
+  flex-direction: column;
+  align-items: center;
+  gap: 47px;
+  overflow: hidden;
+  background: var(--portfolio-color-canvas);
+}
+
+.sectionHeader {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  width: 1184px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.eyebrow {
+  display: flex;
+  height: 32px;
+  margin: 0;
+  padding: 2px 16px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--portfolio-color-neutral-300);
+  border-radius: 24px;
+  color: var(--portfolio-color-neutral-700);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  color: var(--portfolio-color-text);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+  text-align: center;
+}
+
+.form {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  width: 600px;
+  max-width: 100%;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 16px;
+  background: var(--portfolio-color-canvas);
+  box-shadow: 0 4px 32px rgb(207 207 207 / 25%);
+}
+
+.fields {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 8px;
+  background: #fdfdfd;
+}
+
+.field label {
+  color: var(--portfolio-color-text);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.field input,
+.textarea {
+  width: 100%;
+  height: 56px;
+  padding: 8px 16px;
+  border: 1px solid var(--portfolio-color-neutral-300);
+  border-radius: 12px;
+  outline: none;
+  background: #fdfdfd;
+  color: var(--portfolio-color-text);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.field input::placeholder,
+.textarea::placeholder {
+  color: #fdfdfd;
+  opacity: 1;
+}
+
+.field input:focus-visible,
+.textarea:focus-visible {
+  border-color: var(--portfolio-color-gradient-start);
+  box-shadow: 0 0 0 3px rgb(151 71 255 / 22%);
+}
+
+.field input[aria-invalid="true"],
+.textarea[aria-invalid="true"] {
+  border-color: #e94d48;
+}
+
+.textarea {
+  height: 180px;
+  resize: none;
+}
+
+.error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+  color: #c93632;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.submitButton,
+.dialogAction {
+  display: flex;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 9999px;
+  background: linear-gradient(111deg, var(--portfolio-color-gradient-start) 29.659%, var(--portfolio-color-gradient-end) 172.07%);
+  color: #fdfdfd;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.submitButton {
+  width: 100%;
+}
+
+.submitButton:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.submitButton:focus-visible,
+.dialogAction:focus-visible,
+.previewControls button:focus-visible {
+  outline: 3px solid rgb(151 71 255 / 35%);
+  outline-offset: 3px;
+}
+
+.sendIcon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+}
+
+.desktopAsset,
+.mobileAsset {
+  display: block;
+}
+
+.mobileAsset {
+  display: none;
+}
+
+.demoMode {
+  position: absolute;
+  right: 32px;
+  bottom: 92px;
+  margin: 0;
+  color: var(--portfolio-color-neutral-500);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+}
+
+.previewControls {
+  position: absolute;
+  z-index: 3;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--portfolio-color-neutral-500);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.previewControls button {
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  color: #6600eb;
+  font: inherit;
+  cursor: pointer;
+}
+
+.status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.dialogShell {
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+}
+
+.dialogShell[open] {
+  display: grid;
+  place-items: center;
+}
+
+.dialogShell::backdrop {
+  background: rgb(0 0 0 / 70%);
+}
+
+.dialogCard {
+  position: relative;
+  display: flex;
+  width: 479px;
+  padding: 80px 32px 32px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border-radius: 16px;
+  background: var(--portfolio-color-canvas);
+  box-shadow: 0 0 24px rgb(165 165 165 / 20%);
+  transform: translateX(-16.5px);
+}
+
+.dialogCopy {
+  display: flex;
+  width: 415px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.dialogCopy h3,
+.dialogCopy p {
+  width: 100%;
+  margin: 0;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.dialogCopy h3 {
+  color: var(--portfolio-color-text);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.dialogCopy p {
+  color: var(--portfolio-color-neutral-500);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.dialogAction {
+  width: 361px;
+  height: 48px;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.successArtwork,
+.failureArtwork {
+  position: absolute;
+  top: -96px;
+  left: 50%;
+  width: 160px;
+  height: 160px;
+  transform: translateX(-50%);
+}
+
+.failureLayer {
+  position: absolute;
+  max-width: none;
+}
+
+.failureBackground {
+  top: 10.11px;
+  left: 10.11px;
+}
+
+.failureRing {
+  inset: 0;
+}
+
+.failureEnvelope {
+  top: 4.7px;
+  left: 4.7px;
+}
+
+.failureStatus {
+  top: 53px;
+  left: 103px;
+}
+
+.failureX {
+  top: 58px;
+  left: 108px;
+}
+
+.previewNotice {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  margin: 0;
+  padding: 6px 12px;
+  border: 1px solid rgb(255 255 255 / 45%);
+  border-radius: 9999px;
+  background: rgb(10 13 18 / 78%);
+  color: #fdfdfd;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 40px 16px;
+    gap: 24px;
+  }
+
+  .sectionHeader {
+    gap: 12px;
+  }
+
+  .eyebrow {
+    height: 24px;
+    padding: 2px 12px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .sectionHeader h2 {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.64px;
+  }
+
+  .form {
+    width: 100%;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 12px;
+  }
+
+  .field {
+    gap: 6px;
+  }
+
+  .field label {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .field input,
+  .textarea {
+    height: 48px;
+  }
+
+  .textarea {
+    height: 120px;
+  }
+
+  .submitButton {
+    height: 48px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .desktopAsset {
+    display: none;
+  }
+
+  .mobileAsset {
+    display: block;
+  }
+
+  .demoMode {
+    right: 16px;
+    bottom: 67px;
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .previewControls {
+    bottom: 8px;
+    gap: 6px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .dialogCard {
+    width: calc(100vw - 32px);
+    max-width: 361px;
+    padding: 80px 24px 24px;
+    transform: translateY(-7px);
+  }
+
+  .dialogCopy {
+    width: 100%;
+  }
+
+  .dialogCopy h3 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .dialogCopy p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .dialogAction {
+    width: 100%;
+  }
+
+  .successArtwork,
+  .failureArtwork {
+    top: -56px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .failureBackground {
+    top: 7.58px;
+    left: 7.58px;
+  }
+
+  .failureEnvelope {
+    top: 3.52px;
+    left: 3.52px;
+  }
+
+  .failureStatus {
+    top: 40px;
+    left: 77.5px;
+  }
+
+  .failureX {
+    top: 43.72px;
+    left: 81.22px;
+  }
+
+  .previewNotice {
+    bottom: 16px;
+    font-size: 9px;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  /* VERIFIED FROM FIGMA — implemented Portfolio 6 sections */
+  --portfolio-color-canvas: #ffffff;
+  --portfolio-color-text: #0a0d12;
+  --portfolio-color-hero: #0a0d12;
+  --portfolio-color-on-dark: #fdfdfd;
+  --portfolio-color-on-dark-muted: #d5d7da;
+  --portfolio-color-gradient-start: #9747ff;
+  --portfolio-color-gradient-end: #1179fc;
+  --portfolio-color-neutral-800: #252b37;
+  --portfolio-color-neutral-700: #414651;
+  --portfolio-color-neutral-500: #717680;
+  --portfolio-color-neutral-300: #d5d7da;
+  --portfolio-color-skill-icon: #f5f5f5;
+  --portfolio-color-primary-100: #f3ebff;
+  --portfolio-color-primary-200: #8b32ff;
+  --portfolio-color-blue: #177eff;
+  --portfolio-color-pink: #ec1c96;
+
+  /*
+   * PROVISIONAL DESIGN TOKENS — remaining sections only
+   * Replace these values only after the matching Figma styles and variables
+   * have been verified during the visual implementation sprint.
+   */
+  --portfolio-color-surface: #f7f7f7;
+  --portfolio-color-text-muted: #6b7280;
+  --portfolio-color-border: #e5e7eb;
+
+  --container-content: 75rem;
+  --section-space: clamp(4rem, 8vw, 8rem);
+  --page-gutter: clamp(1.25rem, 4vw, 4rem);
+  --radius-card: 1.5rem;
+}
+
+@theme inline {
+  --color-canvas: var(--portfolio-color-canvas);
+  --color-surface: var(--portfolio-color-surface);
+  --color-foreground: var(--portfolio-color-text);
+  --color-muted: var(--portfolio-color-text-muted);
+  --color-accent: var(--portfolio-color-gradient-start);
+  --color-border: var(--portfolio-color-border);
+  --font-sans: var(--font-poppins);
+  --font-display: var(--font-outfit);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-motion-reveal="section-heading"],
+  [data-motion-interactive] {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  [data-motion-reveal] {
+    opacity: 1 !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--portfolio-color-canvas);
+  color: var(--portfolio-color-text);
+  font-family: var(--font-poppins), sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+.section-shell {
+  width: min(100% - (2 * var(--page-gutter)), var(--container-content));
+  margin-inline: auto;
+  padding-block: var(--section-space);
+}

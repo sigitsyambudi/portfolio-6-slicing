@@ -1,0 +1,48 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="150.609" height="150.609" viewBox="0 0 150.609 150.609" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Mask group">
+<mask id="mask0_0_524" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="151" height="151">
+<circle id="Ellipse 107" cx="75.3047" cy="75.3047" r="75.3047" fill="#F3EBFF"/>
+</mask>
+<g mask="url(#mask0_0_524)">
+<g id="Group 106">
+<path id="Union" d="M70.4437 40.7019C72.2986 39.3849 74.7832 39.3848 76.6381 40.7019L131.961 79.9871C133.992 81.4294 134.562 83.7104 134.037 85.7V148.954C134.037 153.878 130.045 157.87 125.12 157.87H21.9603C17.0361 157.87 13.0444 153.878 13.0443 148.954V85.701C12.5192 83.7111 13.0892 81.4296 15.1205 79.9871L70.4437 40.7019Z" fill="#4D64DE"/>
+<g id="Mask group_2">
+<mask id="mask1_0_524" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="39" width="122" height="119">
+<path id="Union_2" d="M71.6603 40.5458C72.7826 39.7347 74.2988 39.7347 75.4211 40.5458L132.592 81.8632C133.142 82.261 133.511 82.7618 133.719 83.3017C133.921 83.6622 134.037 84.0776 134.037 84.5204V148.954C134.037 153.878 130.045 157.87 125.121 157.87H21.9601C17.036 157.87 13.0443 153.878 13.0441 148.954V84.5204C13.0441 84.0792 13.1597 83.6652 13.3605 83.3056C13.5684 82.7642 13.9378 82.262 14.4894 81.8632L71.6603 40.5458Z" fill="#6600EB"/>
+</mask>
+<g mask="url(#mask1_0_524)">
+<rect id="Rectangle 131" x="30.0192" y="90.5112" width="88.1264" height="39.0068" fill="white"/>
+<path id="Vector 104" d="M13.0441 158.374V90.1123L134.76 158.374H13.0441Z" fill="url(#paint0_linear_0_524)"/>
+<path id="Vector 105" d="M134.76 158.374V90.1123L13.0442 158.374H134.76Z" fill="url(#paint1_linear_0_524)"/>
+<path id="Polygon 11" d="M68.6079 111.564C71.5345 109.085 75.8243 109.085 78.7509 111.564L128.662 153.841C134.238 158.564 130.899 167.675 123.591 167.675H23.7678C16.4603 167.675 13.1203 158.564 18.6963 153.841L68.6079 111.564Z" fill="#AC6EFC"/>
+</g>
+</g>
+<g id="Rectangle 128">
+<use xlink:href="#stroke0_0_524" fill="white"/>
+<use xlink:href="#stroke0_0_524" fill="white"/>
+</g>
+<path id="Subtract" d="M29.3967 58.6903C29.7702 58.6903 30.1408 58.7038 30.508 58.7284H99.7258C99.9828 58.7284 100.238 58.7349 100.492 58.747C91.9733 59.1457 85.1584 66.0603 84.9182 74.62H28.5744V74.5819H13.0451C13.2926 65.7633 20.5182 58.6903 29.3967 58.6903Z" fill="url(#paint2_linear_0_524)"/>
+<path id="Union_3" d="M96.1138 99.8643H50.9673V97.6973H96.1138V99.8643ZM96.1138 92.6407H50.9673V90.4737H96.1138V92.6407ZM96.1138 85.4171H50.9673V83.2501H96.1138V85.4171Z" fill="url(#paint3_linear_0_524)"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_524" x1="-3.69528" y1="106.805" x2="52.3047" y2="124.305" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1179FC"/>
+<stop offset="1" stop-color="#9747FF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_524" x1="151.499" y1="106.805" x2="95.4991" y2="124.305" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1179FC"/>
+<stop offset="1" stop-color="#9747FF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_0_524" x1="57.8549" y1="58.6903" x2="57.8549" y2="74.5823" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B4C0FF"/>
+<stop offset="1" stop-color="#DEE3FF"/>
+</linearGradient>
+<linearGradient id="paint3_linear_0_524" x1="50.9673" y1="99.8643" x2="96.1138" y2="99.8643" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B5C0FF"/>
+<stop offset="1" stop-color="#B5C0FF" stop-opacity="0"/>
+</linearGradient>
+<path id="stroke0_0_524" d="M30.0193 58.728H101.026C110.481 58.728 118.146 66.3927 118.146 75.8477V91.5948H30.0193V58.728Z"/>
+</defs>
+</svg>
