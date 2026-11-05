@@ -62,7 +62,6 @@ function FormField({
     id,
     name: id,
     required: true,
-    placeholder: "Enter your name",
     "aria-invalid": Boolean(error),
     "aria-describedby": describedBy,
   } as const;
